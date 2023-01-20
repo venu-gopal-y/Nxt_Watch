@@ -1,0 +1,95 @@
+import styled from 'styled-components'
+
+export const MainBody = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`
+
+export const SidebarContainer = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+`
+
+export const GamingMainContainer = styled.div`
+  background-color: ${props =>
+    props.theme === 'dark' ? '#0f0f0f' : '#f9f9f9'};
+`
+
+export const GamingContainer = styled.div`
+  height: 90vh;
+  overflow-x: auto;
+  flex-grow: 1;
+  padding: 16px;
+  @media screen and (max-width: 768px) {
+    min-height: 90vh;
+  }
+`
+
+export const GamingMenuContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+  background-color: ${props =>
+    props.theme === 'dark' ? '#424242' : '#f8fafc'};
+`
+
+export const IconContainer = styled.div`
+  padding: 16px;
+  border-radius: 36px;
+  margin-right: 16px;
+  margin-left: 16px;
+  background-color: ${props =>
+    props.theme === 'dark' ? '#0f0f0f' : '#e2e8f0'};
+`
+
+export const MenuHeading = styled.h1`
+  color: ${props => (props.theme === 'dark' ? '#f9f9f9' : '#0f0f0f')};
+`
+
+export const LoaderContainer = styled.div`
+  text-align: center;
+`
+export const FailureContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 16px;
+`
+
+export const FailureImg = styled.img`
+  width: 80%;
+  padding-top: 16px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+`
+
+export const FailureText = styled.h1`
+  margin: 0;
+  padding: 6px;
+  color: ${props => (props.theme === 'dark' ? '#f9f9f9' : '#181818')};
+`
+export const RetryButton = styled.button`
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 12px;
+  border-radius: 6px;
+`
+
+export const VideosList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`
